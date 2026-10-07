@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ManeBooth – Privacy Policy</title>
+  <meta name="description" content="How the ManeBooth iOS app uses your photos and data, who processes them, and for how long.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;1,600&family=Hanken+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html">Mane<span>Booth</span></a>
+      <nav class="site-nav" aria-label="Legal pages">
+        <a href="index.html">Support</a>
+        <a href="privacy.html" aria-current="page">Privacy</a>
+        <a href="terms.html">Terms</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="wrap">
+      <h1 id="top">Privacy Policy</h1>
+      <p class="updated">Last updated <time datetime="2026-10-07">7 October 2026</time></p>
+
+      <section class="summary" aria-labelledby="summary-title">
+        <h2 id="summary-title">The short version</h2>
+        <ul>
+          <li><strong>No account.</strong> You can use ManeBooth without signing up. We never ask for your name or email in the app.</li>
+          <li><strong>Your looks stay on your iPhone.</strong> Your selfie, the haircut photos you add, your looks, photobooth strips and stylist cards are stored on your phone.</li>
+          <li><strong>Photos are sent only to make a look.</strong> When you try a haircut, your selfie and the haircut photo travel over an encrypted connection to our server, which passes them to our image provider and does not store them.</li>
+          <li><strong>We keep very little, for a short time.</strong> Our server keeps a random install ID, your look counts and purchase records, and links to your results for 30 days.</li>
+          <li><strong>No ads, no tracking, no selling.</strong> No advertising identifier (IDFA), no analytics SDK, and we never sell or share your data for advertising. We never use your photos to train models.</li>
+          <li><strong>You are in control.</strong> Settings, then Delete all my photos and data, removes everything on your phone and asks our server to delete what it holds for your install.</li>
+        </ul>
+      </section>
+
+      <nav class="toc" aria-labelledby="toc-title">
+        <h2 id="toc-title">Contents</h2>
+        <ol>
+          <li><a href="#who-we-are">Who we are</a></li>
+          <li><a href="#on-device">Data stored on your iPhone</a></li>
+          <li><a href="#making-looks">Making a look: what is sent and why</a></li>
+          <li><a href="#server">What our server keeps</a></li>
+          <li><a href="#purchases">Purchases and subscriptions</a></li>
+          <li><a href="#permissions">Camera, Photos and notifications</a></li>
+          <li><a href="#support-emails">When you contact us</a></li>
+          <li><a href="#what-we-dont-do">What we never do</a></li>
+          <li><a href="#providers">Who we share data with</a></li>
+          <li><a href="#retention">How long we keep data</a></li>
+          <li><a href="#your-choices">Deleting your data and your choices</a></li>
+          <li><a href="#age">Age limits and children</a></li>
+          <li><a href="#security">Security</a></li>
+          <li><a href="#transfers">International transfers</a></li>
+          <li><a href="#gdpr">If you are in the EU, EEA or UK</a></li>
+          <li><a href="#california">If you are in California (US)</a></li>
+          <li><a href="#australia">If you are in Australia</a></li>
+          <li><a href="#changes">Changes to this policy</a></li>
+          <li><a href="#contact">Contact us</a></li>
+        </ol>
+      </nav>
+
+      <section aria-labelledby="who-we-are">
+        <h2 id="who-we-are">1. Who we are</h2>
+        <p>ManeBooth is an iPhone app provided by Nghia Le, trading as LilGroup ("LilGroup", "we", "us"). This policy explains what information the app uses, why, where it is kept and the choices you have. It applies to the ManeBooth iOS app and this website.</p>
+        <p>For users in the EU, EEA and UK, LilGroup is the "controller" of the limited personal data we process. You can reach us at <a href="mailto:oscar.lehuu@gmail.com">oscar.lehuu@gmail.com</a>.</p>
+      </section>
+
+      <section aria-labelledby="on-device">
+        <h2 id="on-device">2. Data stored on your iPhone</h2>
+        <p>ManeBooth works without an account. What you create in the app stays on your device:</p>
+        <ul>
+          <li>your selfie, and the answers you give about your hair (length, texture, goal);</li>
+          <li>the haircut photos you paste, pick or take;</li>
+          <li>your looks, photobooth strips, side and back views, stylist cards and cut notes;</li>
+          <li>salon visit dates you choose, and your app settings;</li>
+          <li>a random install ID, kept in your iPhone's Keychain, so our server can count your looks without knowing who you are.</li>
+        </ul>
+        <p>We cannot access this data on your phone.</p>
+      </section>
+
+      <section aria-labelledby="making-looks">
+        <h2 id="making-looks">3. Making a look: what is sent and why</h2>
+        <p>ManeBooth's main feature needs to process photos on a server. Each time you try a haircut, re-try a look, open the photobooth strip or make a stylist card, the app sends over an encrypted connection (HTTPS):</p>
+        <ul>
+          <li>your selfie and the haircut photo, shrunk to at most 1024 pixels on the long side;</li>
+          <li>the options you chose (for example keep my colour or keep my length) and your hair answers;</li>
+          <li>your random install ID, and, for paid features, Apple's signed record of your purchase so we can check your plan.</li>
+        </ul>
+        <p>Our server runs on Cloudflare. It forwards the photos to <strong>fal.ai</strong>, our image provider, which runs the image model (OpenAI's GPT Image, or ByteDance's Seedream if the first one fails) and returns the result as a private link. For stylist cut notes, the result image and the haircut photo are sent to <strong>OpenRouter</strong>, which runs a text model (OpenAI) that writes the notes. The app then downloads the result to your phone.</p>
+        <p>Our server does not save your photos. It only works with them in memory for the few seconds a request takes. To avoid charging you twice for the same request, it stores a one-way fingerprint (hash) of the inputs, which cannot be turned back into a photo.</p>
+        <p>ManeBooth does not try to recognise who you are. We do not create face templates or other biometric identifiers, and we do not compare your face with any other face.</p>
+        <p>Haircut photos you add may show another person. They are used only to copy the hairstyle onto your own photo; please add only photos you have the right to use (see our <a href="terms.html">Terms of Use</a>).</p>
+      </section>
+
+      <section aria-labelledby="server">
+        <h2 id="server">4. What our server keeps</h2>
+        <ul>
+          <li><strong>Your random install ID</strong>, your plan, how many looks you have used this week and any look-pack credit, so limits work and failed tries are never counted.</li>
+          <li><strong>Look records</strong>: a look ID, the private link to the result image, which model made it, and retry counts. Stylist notes text and links to side and back views are kept with the look.</li>
+          <li><strong>Purchase records</strong>: Apple transaction IDs and product IDs, so one purchase cannot be used twice.</li>
+          <li><strong>Request fingerprints</strong> (hashes) for the duplicate check described above.</li>
+          <li><strong>A per-minute request counter</strong> keyed by your install ID and your IP address, to stop abuse.</li>
+          <li><strong>Basic request logs</strong> kept by Cloudflare (time, route, status and error messages, not your photos).</li>
+        </ul>
+        <p>None of this includes your name, email, Apple ID or your photos. How long each item is kept is in <a href="#retention">How long we keep data</a>.</p>
+      </section>
+
+      <section aria-labelledby="purchases">
+        <h2 id="purchases">5. Purchases and subscriptions</h2>
+        <p>Subscriptions and the look pack are sold through Apple In-App Purchase. Apple handles payment; we never see your card or your Apple ID. We use <strong>RevenueCat</strong> to manage purchases: it receives your random install ID, your purchase and subscription status, and basic device information (such as iOS version and country) needed to validate purchases.</p>
+      </section>
+
+      <section aria-labelledby="permissions">
+        <h2 id="permissions">6. Camera, Photos and notifications</h2>
+        <ul>
+          <li><strong>Camera:</strong> only if you choose to take a selfie or a photo of a haircut. You can pick from Photos instead.</li>
+          <li><strong>Photos:</strong> ManeBooth uses Apple's photo picker, so it only sees the photos you choose. Saving a look or a stylist card to Photos asks for permission to add photos only.</li>
+          <li><strong>Notifications:</strong> salon reminders are scheduled on your iPhone. They do not go through our server.</li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="support-emails">
+        <h2 id="support-emails">7. When you contact us</h2>
+        <p>If you email us, we receive your email address and what you write. The app's help email fills in your app version and iOS version, and the look ID when there is one, to help us find the problem; you can remove them before sending. We use this only to answer you.</p>
+      </section>
+
+      <section aria-labelledby="what-we-dont-do">
+        <h2 id="what-we-dont-do">8. What we never do</h2>
+        <ul>
+          <li>We never sell your data or share it for advertising.</li>
+          <li>We never use the advertising identifier (IDFA) or track you across other apps and websites.</li>
+          <li>We never use your photos or looks to train models, and never use them for anything other than making your looks.</li>
+          <li>We never store your photos on our server.</li>
+          <li>We never publish or share your looks. Sharing only happens when you tap Share or Send to my salon.</li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="providers">
+        <h2 id="providers">9. Who we share data with</h2>
+        <p>We use a small number of providers that process data for us:</p>
+        <div class="table-scroll">
+          <table>
+            <thead>
+              <tr><th scope="col">Provider</th><th scope="col">What they receive</th><th scope="col">Why</th></tr>
+            </thead>
+            <tbody>
+              <tr><td><a href="https://www.cloudflare.com/privacypolicy/">Cloudflare</a> (US, global network)</td><td>All requests from the app, including photos in transit; the server data in section 4</td><td>Runs our server and database</td></tr>
+              <tr><td><a href="https://fal.ai/privacy">fal.ai</a> (US)</td><td>Your selfie, the haircut photo and the instructions for each look</td><td>Runs the image models (OpenAI GPT Image, ByteDance Seedream) and hosts the result at a private link</td></tr>
+              <tr><td><a href="https://openrouter.ai/privacy">OpenRouter</a> (US)</td><td>The result image and the haircut photo, when you make a stylist card</td><td>Runs the text model (OpenAI) that writes cut notes</td></tr>
+              <tr><td><a href="https://www.revenuecat.com/privacy/">RevenueCat</a> (US)</td><td>Random install ID, purchase status, basic device information</td><td>Manages subscriptions and purchases</td></tr>
+              <tr><td><a href="https://www.apple.com/legal/privacy/">Apple</a></td><td>Payment and App Store data, under your agreement with Apple</td><td>App Store, payments, refunds</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>These providers handle data under their own terms and privacy policies, linked above. We may also disclose information if the law requires it.</p>
+      </section>
+
+      <section aria-labelledby="retention">
+        <h2 id="retention">10. How long we keep data</h2>
+        <ul>
+          <li><strong>Your photos:</strong> not kept on our server at all. Our providers may keep request data for a limited time under their own policies.</li>
+          <li><strong>Look records, links to results, stylist notes and view links:</strong> deleted from our server 30 days after they are made. Your looks stay on your phone until you delete them.</li>
+          <li><strong>Request fingerprints:</strong> 7 days.</li>
+          <li><strong>Per-minute request counters (install ID and IP address):</strong> deleted within 24 hours.</li>
+          <li><strong>Cloudflare request logs:</strong> a few days.</li>
+          <li><strong>Install ID, look counts and purchase records:</strong> while you use ManeBooth, until you delete your data in the app or ask us to.</li>
+          <li><strong>Support emails:</strong> as long as needed to help you, then deleted within 12 months.</li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="your-choices">
+        <h2 id="your-choices">11. Deleting your data and your choices</h2>
+        <ul>
+          <li><strong>Delete your selfie:</strong> Settings, then Your photo, then Delete.</li>
+          <li><strong>Delete everything:</strong> Settings, then Delete all my photos and data. This removes your photos, looks, cards and settings from your iPhone and asks our server to delete the records it holds for your install ID.</li>
+          <li><strong>Delete the app:</strong> removes everything stored on your phone. Server records then expire as described above, or you can email us to delete them sooner.</li>
+          <li><strong>Turn off permissions</strong> for Camera, Photos and Notifications at any time in iPhone Settings.</li>
+        </ul>
+        <p>Deleting your data does not cancel a subscription; cancel it in iPhone Settings, your name, Subscriptions.</p>
+      </section>
+
+      <section aria-labelledby="age">
+        <h2 id="age">12. Age limits and children</h2>
+        <p>ManeBooth is intended for people aged 13 and over. If you are under 18, please use ManeBooth only with permission from a parent or guardian.</p>
+        <p>ManeBooth is not directed at children, and we do not knowingly collect personal information from children under 13. If you believe a child has used the app, contact us and we will help delete any data we hold.</p>
+      </section>
+
+      <section aria-labelledby="security">
+        <h2 id="security">13. Security</h2>
+        <p>Data on your iPhone is protected by iOS security, including your passcode and device encryption. Photos travel over encrypted connections and are not stored on our server. Results are hosted at long, unguessable private links. No system is perfectly secure, but we keep the data we handle to a minimum to reduce risk.</p>
+      </section>
+
+      <section aria-labelledby="transfers">
+        <h2 id="transfers">14. International transfers</h2>
+        <p>Our providers, including Cloudflare, fal.ai, OpenRouter and RevenueCat, are based in or process data in the United States, so your photos and purchase information may be processed there. When personal data from the EU, EEA or UK is transferred to the US, we rely on the safeguards our providers offer under GDPR Chapter V, in particular the European Commission's Standard Contractual Clauses (with the UK Addendum or International Data Transfer Agreement for UK data) or, where a provider is certified, the EU–US Data Privacy Framework.</p>
+      </section>
+
+      <section aria-labelledby="gdpr">
+        <h2 id="gdpr">15. If you are in the EU, EEA or UK</h2>
+        <p>The EU General Data Protection Regulation (GDPR) and the UK GDPR give you specific rights. The controller is LilGroup; see <a href="#contact">Contact us</a>.</p>
+        <h3 id="legal-bases">Our legal bases</h3>
+        <div class="table-scroll">
+          <table>
+            <thead>
+              <tr><th scope="col">Purpose</th><th scope="col">Legal basis</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Processing your selfie and haircut photo to make the looks, strips, views and notes you ask for</td><td>Performance of our contract with you (Art. 6(1)(b) GDPR). We do not process them to identify you, so they are not used as biometric data.</td></tr>
+              <tr><td>Purchases, checking your plan and counting looks</td><td>Performance of our contract with you (Art. 6(1)(b))</td></tr>
+              <tr><td>Request counters, duplicate checks and logs to prevent abuse and keep the service working</td><td>Our legitimate interest in running a secure, fair service (Art. 6(1)(f))</td></tr>
+              <tr><td>Answering support emails</td><td>Our legitimate interest in helping you (Art. 6(1)(f))</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <h3 id="gdpr-rights">Your rights</h3>
+        <p>You have the right to access, correct, delete, restrict or object to the processing of your personal data, and the right to data portability. To use these rights, email <a href="mailto:oscar.lehuu@gmail.com">oscar.lehuu@gmail.com</a> and, if you can, send it from the app's help email (Settings, then Help and feedback) or include a look ID, so we can find your records. We will reply within one month.</p>
+        <p>You also have the right to complain to your local data protection authority. In the UK this is the Information Commissioner's Office (ICO).</p>
+        <p>We do not make decisions about you based solely on automated processing that have legal or similarly significant effects.</p>
+        <h3 id="representatives">Representatives</h3>
+        <p>LilGroup is established in Australia. It contracts directly with its processors and has not appointed separate EU or UK representatives at this stage. Contact us using the details below for any GDPR request.</p>
+      </section>
+
+      <section aria-labelledby="california">
+        <h2 id="california">16. If you are in California (US)</h2>
+        <p>This section is our notice under the California Consumer Privacy Act as amended by the California Privacy Rights Act (CCPA/CPRA). We provide it as good practice; LilGroup is a small business and may not meet the CCPA's applicability thresholds, but we apply the same choices to everyone.</p>
+        <p><strong>Categories we collect</strong>, and the sources and purposes described above:</p>
+        <ul>
+          <li><strong>Identifiers:</strong> a random install ID; your IP address in per-minute request counters, deleted within 24 hours; your email address if you contact us.</li>
+          <li><strong>Commercial information:</strong> App Store purchase and subscription status.</li>
+          <li><strong>Visual information:</strong> your selfie and haircut photos, processed to make looks and not stored on our server.</li>
+        </ul>
+        <p><strong>No sale or sharing.</strong> We do not sell your personal information and we do not share it for cross-context behavioural advertising, and we have not done so in the past 12 months. We do not knowingly sell or share the personal information of consumers under 16. We use personal information only to provide the features you ask for.</p>
+        <p><strong>Your rights.</strong> You may ask to know what personal information we have collected about you, to delete it and to correct it. We will not discriminate against you for using these rights. Email <a href="mailto:oscar.lehuu@gmail.com">oscar.lehuu@gmail.com</a>; an authorised agent may also make a request on your behalf. Because we have no accounts, we may need a look ID (the app's help email includes it) to find your records.</p>
+        <p><strong>Retention:</strong> see <a href="#retention">How long we keep data</a>.</p>
+      </section>
+
+      <section aria-labelledby="australia">
+        <h2 id="australia">17. If you are in Australia</h2>
+        <p>We handle personal information in line with the Australian Privacy Principles (APPs) in the Privacy Act 1988 (Cth). LilGroup is a small business and may fall under the Act's small-business exemption, but we choose to follow the APPs regardless.</p>
+        <p>Some providers are overseas, mainly in the United States (see <a href="#transfers">International transfers</a>). We choose providers that protect information to a standard similar to the APPs.</p>
+        <p>You can ask to access or correct your personal information, or make a privacy complaint, by emailing <a href="mailto:oscar.lehuu@gmail.com">oscar.lehuu@gmail.com</a>. We aim to respond within 30 days. If you are not satisfied, you can contact the Office of the Australian Information Commissioner (OAIC) at <a href="https://www.oaic.gov.au">oaic.gov.au</a>.</p>
+      </section>
+
+      <section aria-labelledby="changes">
+        <h2 id="changes">18. Changes to this policy</h2>
+        <p>We may update this policy when the app or the law changes. We will change the "Last updated" date above and, for important changes, tell you in the app. If a change affects how we use your photos, we will ask for your agreement again where the law requires it.</p>
+      </section>
+
+      <section aria-labelledby="contact">
+        <h2 id="contact">19. Contact us</h2>
+        <p>Nghia Le, trading as LilGroup<br>
+        7 King Street, Prospect, South Australia 5082, Australia<br>
+        Phone: <a href="tel:+61414603198">+61 414 603 198</a><br>
+        Email: <a href="mailto:oscar.lehuu@gmail.com">oscar.lehuu@gmail.com</a></p>
+        <p class="back-to-top"><a href="#top">Back to top</a></p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>ManeBooth is provided by LilGroup.</p>
+      <p>Contact: <a href="mailto:oscar.lehuu@gmail.com">oscar.lehuu@gmail.com</a> · <a href="index.html">Support</a> · <a href="terms.html">Terms</a></p>
+      <p>Last updated <time datetime="2026-10-07">7 October 2026</time>.</p>
+    </div>
+  </footer>
+</body>
+</html>
